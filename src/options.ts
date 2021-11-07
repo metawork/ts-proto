@@ -143,7 +143,7 @@ function parseParameter(parameter: string): Options {
 
 export function getTsPoetOpts(options: Options): { forceDefaultImport?: string[] } {
   if (options.esModuleInterop) {
-    return { forceDefaultImport: ['protobufjs/minimal'] };
+    return { forceDefaultImport: ['protobufjs/minimal.js'] };
   } else {
     return {};
   }
